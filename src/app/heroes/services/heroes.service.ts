@@ -11,7 +11,7 @@ export class HeroesService {
 
   constructor( private http: HttpClient ) { }
 
-  private baseUrl = 'https://morning-lowlands-27401.herokuapp.com/';
+  private baseUrl = 'http://localhost:3000';
 
   getHeroes():Observable<Heroe[]>{
       return this.http.get<Heroe[]>(`${this.baseUrl}/heroes`)
